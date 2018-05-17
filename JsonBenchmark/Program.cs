@@ -1,4 +1,5 @@
-﻿using BenchmarkDotNet.Running;
+﻿using System;
+using BenchmarkDotNet.Running;
 
 namespace JsonBenchmark
 {
@@ -7,6 +8,7 @@ namespace JsonBenchmark
         static void Main(string[] args)
         {
             BenchmarkRunner.Run<JsonDeserializersBenchmarks>();
+            BenchmarkRunner.Run<JsonSerializersBenchmarks>();
         }
     }
 }
